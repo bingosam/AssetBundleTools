@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DepDir>..\dependency</DepDir>
+    <UabeVer>2.1.d</UabeVer>
+    <UabeDir>$(DepDir)\assets_tools\$(UabeVer)</UabeDir>
+    <UabeLibDir>$(UabeDir)\lib.$(PlatformTarget)</UabeLibDir>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="DepDir">
+      <Value>$(DepDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="UabeVer">
+      <Value>$(UabeVer)</Value>
+    </BuildMacro>
+    <BuildMacro Include="UabeDir">
+      <Value>$(UabeDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="UabeLibDir">
+      <Value>$(UabeLibDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
